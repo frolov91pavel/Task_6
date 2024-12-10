@@ -14,19 +14,27 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit Jupiter для тестирования -->
+        <!-- JUnit Jupiter API для написания тестов -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
+            <version>5.9.3</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- Mockito для моков -->
+        <!-- Mockito для создания моков -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>4.0.0</version>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Интеграция Mockito и JUnit -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.5.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
